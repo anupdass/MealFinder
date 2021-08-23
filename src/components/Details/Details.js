@@ -15,7 +15,7 @@ const Details = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setDetails(data.meals[0]));
-    }, [])
+    }, [id])
 
     const { strMeal, strMealThumb, strCategory, strInstructions, strArea, strYoutube } = details;
 
